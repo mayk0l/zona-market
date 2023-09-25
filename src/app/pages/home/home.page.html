@@ -1,0 +1,36 @@
+<ion-header  [translucent]="true">
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img id="im"src="assets/img/Logo ZonaMarket1.png" />
+    </ion-col>
+    <ion-col>Bienvenido/a : {{data.nombre}}</ion-col>
+    <ion-col> <ion-button type="submit" color="danger" expand="block" (click)="presentAlert()">Cerrar Sesión</ion-button> </ion-col>
+  </ion-row>
+</ion-grid>   
+</ion-header>
+
+<ion-content [fullscreen]="true" class="backfondent"> 
+  <ion-router-outlet></ion-router-outlet>
+<!--
+  <ion-card id="n">
+  <h1 > </h1>
+  <p> Conoce, Localiza y Contacta con tus Locales Comerciales mas cercanos. <br>Con tu buscador favorito <strong>Zona Market</strong></p>
+  <img id="im"src="assets/img/seo-local-2020.png" />
+  </ion-card>
+  -->
+</ion-content>
+
+<ion-segment (ionChange)="segmentChanged($event)" id="with">
+        <ion-segment-button value="buscador">
+          <ion-icon name="home"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="favorito">
+          <ion-icon name="heart"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="mas">
+          <ion-icon name="musical-notes"></ion-icon>
+        </ion-segment-button>
+</ion-segment>
+
+

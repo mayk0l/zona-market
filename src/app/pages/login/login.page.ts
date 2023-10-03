@@ -46,7 +46,7 @@ export class LoginPage implements OnInit {
         user:this.user
       }  
   }
-    this.router.navigate(['/home'], navegationExtras);
+    this.router.navigate(['/home/buscador'], navegationExtras);
   }
 
 }

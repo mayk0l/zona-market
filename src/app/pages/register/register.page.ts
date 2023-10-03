@@ -38,7 +38,7 @@ export class RegisterPage implements OnInit {
       header: ' Usuario Registrado',
       buttons: [ 'Redireccionar al Inicio' ]
     });
-    this.navCtrl.navigateRoot('home');
+    this.navCtrl.navigateRoot('home/buscador');
     await alert.present();
   }}
 
